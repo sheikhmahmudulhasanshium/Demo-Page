@@ -1,0 +1,77 @@
+export interface ICategories{
+    id:number;
+    category_name:string;
+    url:string;
+}
+export const categories: ICategories[]=[
+    {
+        id:1,
+        category_name:'Business',
+        url:'',
+    },
+    {
+        id:2,
+        category_name:'Legal',
+        url:'',
+    },
+    {
+        id:3,
+        category_name:'Marketing',
+        url:'',
+    },
+    {
+        id:4,
+        category_name:'Coaching',
+        url:'',
+    },
+    {
+        id:5,
+        category_name:'Politics',
+        url:'',
+    },
+    {
+        id:6,
+        category_name:'Counseling',
+        url:'',
+    },
+    {
+        id:7,
+        category_name:'Real Estate',
+        url:'',
+    },
+    {
+        id:8,
+        category_name:'Crypto',
+        url:'',
+    },
+    {
+        id:9,
+        category_name:'Social Media',
+        url:'',
+    },
+    {
+        id:10,
+        category_name:'Entrepreneurship',
+        url:'',
+    },
+    {
+        id:11,
+        category_name:'Sports',
+        url:'',
+    },
+    {
+        id:12,
+        category_name:'Finance',
+        url:'',
+    },
+    {
+        id:13,
+        category_name:'Technology',
+        url:'',
+    },
+    {
+        id:14,
+        category_name:'Health',
+        url:'',
+    },
+]
