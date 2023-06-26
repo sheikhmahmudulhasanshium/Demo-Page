@@ -9,7 +9,7 @@ const Cat_Menu_bar = () => {
                           <div className=' rounded-xl bg-slate-600 hover:text-red-400'>
                               <div className='flex flex-row rounded-xl bg-slate-100'>
 
-                                  <Cat_Menu_bar_controller category={categories} />       
+                                  <Cat_Menu_bar_controller category={categories} key={categories.id} />       
                               </div>
                           </div>
                       ))}
