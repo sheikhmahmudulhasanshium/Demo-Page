@@ -1,10 +1,8 @@
 import React, { FunctionComponent, useState } from 'react'
 import {MdVerified} from 'react-icons/md'
-import {GoStar, GoStarFill} from 'react-icons/go'
+import {AiOutlineStar, AiFillStar} from 'react-icons/ai'
 import {TiMessage} from 'react-icons/ti'
 import { IProducts } from '../type'
-import { products } from '../../../data'
-//import Image from 'next/image'
 
 const Product_Card:FunctionComponent<{products:IProducts}> = ({products:{ID,Name,Description,Category,PictureURL,Rating,ServiceCount}}) => {
   const [showStar, setShowStar]=useState('hide')
@@ -13,7 +11,7 @@ const Product_Card:FunctionComponent<{products:IProducts}> = ({products:{ID,Name
     showStar==='hide'?setShowStar('show'):setShowStar('hide')
     
   }
-  const isStarClicked= showStar==='hide'?<GoStar className=''/>:<GoStarFill className=''/>
+  const isStarClicked= showStar==='hide'?<AiOutlineStar />:<AiFillStar />
   return (
     
       <div className="flex flex-col items-center p-3 m-1 bg-blue-800 rounded-2xl">

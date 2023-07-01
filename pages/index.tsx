@@ -7,10 +7,10 @@ const Home = () => {
   return (
     <div>
       <Head>
-        <title>Custom App By Shium</title>
-        <link rel="icon" href="/Full-Apple.png" className="rounded-full" />
+        <title >Custom App By Shium</title>
+        <link rel="icon" href="/Full-Apple.png" className="rounded-full " />
       </Head>
-      <main className=" bg-slate-800">
+      <main className="rounded-3xl">
          {/**<CounterView />*/}
           
           <Body/>

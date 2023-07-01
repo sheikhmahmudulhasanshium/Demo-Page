@@ -1,5 +1,4 @@
 import React, { FunctionComponent } from 'react'
-import { categories } from '../../../data'
 import { ICategories } from '../type'
 
 const Cat_Menu_bar_controller:FunctionComponent<{category:ICategories}> = ({category:{id,category_name,url}}) => {

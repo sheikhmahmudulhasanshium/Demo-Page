@@ -19,10 +19,10 @@ const Navbar = () => {
   const catIcon=(showCat==='hide')?<GrFormDown/>:<GrFormUp/>
   return (
     <div className='sticky top-0'>
-        <div className="flex flex-row items-center flex-grow h-16 gap-2 p-2 space-x-4 bg-green-100 justify-evenly">
-            <div className="flex flex-row w-2/12 h-10 space-x-2 sm:w-5/12">
-                <Image height={20} width={30} className="h-8 bg-green-200 rounded-lg" src="/Full-Apple.png" alt="logo"/>
-                <h3 className="text-lg font-extrabold lg:text-xl">Fool-Apple</h3>
+        <div className="flex items-center justify-center flex-grow h-16 gap-2 space-x-4 bg-green-100">
+            <div className="flex items-center justify-center h-10 space-x-2 lg:w-2/12 lg:flex-wrap sm:flex-col md:w-11/12">
+                <Image height={20} width={30} className="h-4 bg-green-200 rounded-lg" src="/Full-Apple.png" alt="logo"/>
+                <p className="font-extrabold sm:text-xs md:text-lg lg:text-xl">Fool-Apple</p>
             </div>
             <div className='p-2 text-base font-bold sm:w-4/12 hover:text-red-900 lg:text-l'>
               <div className='flex items-center gap-2' onClick={()=>{toggleShowCat()}}><p>Categories</p> <div className='py-1'>{catIcon}</div></div>
