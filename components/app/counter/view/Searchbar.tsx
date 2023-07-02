@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {BsSearch} from 'react-icons/bs'
-import {GoArrowRight} from 'react-icons/Go'
+import {BsArrowRight} from 'react-icons/bs'
 import { categories,products } from '../../../data'
 import {AiFillStar} from 'react-icons/ai'
 import {RxCross2} from 'react-icons/rx'
@@ -42,7 +42,7 @@ const Searchbar = () => {
       <input className='p-1 px-2 bg-white rounded-2xl'  type="text"   placeholder='Search...' id='message' name='message' onChange={handleChangeInput} onKeyDown={checkEnter}/> 
       
       {(searchInput==='')&&<BsSearch className='w-6 h-4 my-2 md:mr-2 lg:mr-3 hover:bg-blue-400 sm:mr-4'/>}
-      {(searchInput!=='')&&<GoArrowRight className='w-5 h-5 m-2'/>}
+      {(searchInput!=='')&&<BsArrowRight className='w-5 h-5 m-2'/>}
       
       </div>
        
