@@ -53,7 +53,7 @@ const Searchbar = () => {
                 {products.map((product)=>
                 {if(searchInput!==''&&product.Name!==searchInput && product.Category!==searchInput && product.ID==='50') return <div>No Results Found.</div>
                   else if((searchInput===''&& product.Name===searchInput||product.Category===searchInput)&&searchInput!=='')
-                  {return <div className='flex items-center gap-2 px-2 my-2 text-xl font-bold rounded-md bg-slate-500 hover:text-red-900'>
+                  {return <div className='flex items-center gap-2 px-2 my-2 text-xl font-bold rounded-md bg-slate-500 hover:text-red-900' key={product.ID}>
                             {product.Name}
                             <div className='flex items-center text-sm font-semibold text-green-400'>
                                 <p>Rating: </p><AiFillStar className='ml-2 text-orange-400'/>{product.Rating}
